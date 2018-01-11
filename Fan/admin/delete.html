@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			body {
+				width: 100%;
+				padding: 0;
+				margin: 0;
+			}
+			
+			ul {
+				list-style: none;
+			}
+			
+			.delete {
+				width: 50px;
+				line-height: 25px;
+				text-align: center;
+				cursor: pointer;
+				background: lightskyblue;
+				color: white;
+				border-radius: 5px;
+				float: right;
+				margin-right: 5%;
+				margin-top: 10px;
+				font-family: "微软雅黑";
+			}
+			
+			.submit {
+				width: 50px;
+				height: 25px;
+				line-height: 25px;
+				text-align: center;
+				cursor: pointer;
+				background: lightskyblue;
+				margin-left: 80%;
+				margin-top: 30px;
+				font-family: "微软雅黑";
+				letter-spacing: 2px;
+				border-radius: 5px;
+				color: white;
+			}
+			
+		
+			.input1 {
+				width: 300px;
+				padding: 7px 10px;
+				border: 1px solid #ccc;
+				margin-right: 10px;
+			}
+			
+			.all_topic ul {
+				width: 100%;
+				-webkit-padding-start: 0;
+			}
+			
+			.item {
+				width: 100%;
+				border-bottom: 1px solid gainsboro;
+				height: 50px;
+				line-height: 50px;
+			}
+			
+			.text {
+				width: 80%;
+				float: left;
+				text-align: center;
+				cursor: default;
+			}
+			
+			.select {
+				float: left;
+				margin-top: 15px;
+			}
+			
+			.top {
+				width: 70%;
+				background: #F2F2F2;
+				margin-left: 15%;
+				text-align: center;
+				padding: 20px;
+			}
+			
+			.select1 {
+				margin-top: 50px ;
+				width: 70%;
+				background: #F2F2F2;
+				margin-left: 15%;
+				text-align: center;
+				padding: 20px;
+			}
+			.all_select{
+				width: 70%;
+				margin-left: 15%;
+				margin-top: 30px;
+				border: 1px solid black;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="select1" id="select1">
+			<h2>所有文章</h2>
+			<div class="all_select">
+				<ul class="list1" id="all_select">
+					<!--<li class="item">
+						<div class="text">'+name+'</div>
+						<div class="delete" onclick="delete_select()">删除</div>
+					</li>-->
+				</ul>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript">
+		show_all();
+		function show_all() {
+			$.ajax({
+				type: "POST",
+				url: 'data.php?action=1',
+				async: false,
+				contentType: "application/x-www-form-urlencoded; charset=utf-8",
+				success: function(ret) {
+					ret = $.parseJSON(ret); //这句要加;
+					if(ret.state == 0) {
+						alert("未发布过文章");
+					} else {
+						var text = "";
+						for(var i in ret) {
+							var title = ret[i].title;
+							var id = ret[i].id;
+							text += '<li class="item"><div class="text">' + title + '</div><div class="delete" onclick="delete_topic(' + id + ')">删除</div></li>';
+						}
+						document.getElementById("all_select").innerHTML = text;
+					}
+
+				}
+			});
+		}
+		
+		function delete_topic(id) {
+			$.ajax({
+				type: "POST",
+				url: 'data.php?action=6',
+				async: false,
+				data: {
+					'id': id
+				},
+				contentType: "application/x-www-form-urlencoded; charset=utf-8",
+				success: function(ret) {
+					ret = $.parseJSON(ret); //这句要加;
+					if(ret.state == 1) {
+						location.reload();
+					}
+				}
+			});
+		}
+	</script>
+
+</html>

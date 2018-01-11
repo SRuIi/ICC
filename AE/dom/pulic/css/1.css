@@ -1,0 +1,293 @@
+.modal.in .modal-dialog {
+            z-index: 10000;
+        }
+
+        #mainView {
+            min-height: 600px;
+        }
+
+        .container {
+            width: 1199px;
+            background-color: white;
+        }
+
+        .container.root {
+            width: 1330px;
+            margin-top: 10px;
+        }
+
+        #rightMenu {
+            position: fixed;
+            _position: absolute;
+            top: 70%;
+            right: 0;
+            z-index: 999999;
+            display: block;
+        }
+
+        #right_ul {
+            position: relative;
+            list-style: none;
+        }
+
+        #right_qq {
+            background: url(http://www.6btc.com/static/images/7_03.png) no-repeat;
+            width: 68px;
+            height: 74px;
+        }
+
+        #right_tip {
+            background: url(http://www.6btc.com/static/images/rightTip.png) no-repeat;
+            width: 252px;
+            height: 91px;
+            position: absolute;
+            right: 70px;
+            top: -10px;
+            display: none;
+            z-index: 999999;
+        }
+
+        .flagShow_p1 {
+            float: left;
+            margin-left: 15px;
+            _margin-left: 5px;
+            font-size: 18px;
+            line-height: 91px;
+        }
+
+        .flagShow_p2 {
+            float: left;
+            margin-left: 10px;
+            _margin-left: 5px;
+            font-size: 18px;
+            color: #FA7C00;
+        }
+
+        .flagShow_p2 a {
+            display: block;
+            margin: 20px 0 5px 12px;
+            line-height: 0;
+        }
+
+        .flagShow_p2 span {
+            margin: 0 0 0 14px;
+        }
+
+        .flag_qq {
+            display: none;
+        }
+
+        #backToTop {
+            z-index: 999999;
+            display: none;
+        }
+
+        a.backToTop_a {
+            background: url(http://www.6btc.com/static/images/7_08.png) no-repeat;
+            width: 68px;
+            height: 79px;
+            display: block;
+        }
+
+        a.backToTop_a:active {
+            background: url(http://www.6btc.com/static/images/7_11.png) no-repeat;
+        }
+
+        .line91 {
+            line-height: 91px;
+        }
+
+        .carousel-indicators {
+            left: 97%;
+            bottom: -14px;
+            width: 28px;
+        }
+
+        .btn-conf {
+            border-radius: 4px !important;
+            color: #fff !important;
+            border-color: #3980c2;
+            background-image: linear-gradient(to bottom, rgb(57, 128, 194) 0, rgb(57, 128, 194) 10%);
+        }
+
+        .btn {
+            white-space: normal;
+        }
+
+        .btn {
+            -webkit-border-radius: 0;
+            -moz-border-radius: 0;
+            border-radius: 0;
+            text-shadow: none;
+            color: #484848;
+        }
+
+        .btn-primary:focus, .btn-primary:hover {
+            background-color: rgb(57, 128, 194);
+            background-position: 0 -15px
+        }
+
+        .btn-primary.active, .btn-primary:active {
+            background-color: rgb(57, 128, 194);
+            border-color: #3980c2
+        }
+
+        .btn-primary.disabled, .btn-primary:disabled, .btn-primary[disabled] {
+            background-color: rgb(57, 128, 194);
+            background-image: none
+        }
+
+        .panel {
+            border: 1;
+            -webkit-border-radius: 0px;
+            -moz-border-radius: 0px;
+            border-radius: 0px;
+            margin-bottom: 30px;
+            background-color: #ffffff !important;
+            color: #545454;
+        }
+
+        .panel .panel-body {
+            border-width: 0;
+            border-style: none;
+            border-top: none;
+            border-right-color: none;
+            border-bottom-color: none;
+            border-left-color: none;
+        }
+
+
+        /*tab-panel-cust*/
+        .tab-panel-custom {
+            margin-top: 0;
+        }
+
+        .tab-panel-custom .progress {
+            height: 4px;
+            margin: 10px -5px 0 -5px;
+        }
+
+        .tab-panel-custom ul.steps {
+            margin: 0 -15px;
+            line-height: 39px;
+            height: 39px;
+            overflow: hidden;
+        }
+
+        .tab-panel-custom ul.steps li {
+            margin: 0;
+        }
+
+        .tab-panel-custom ul.steps li a {
+            padding: 0 20px;
+            height: 39px;
+            -webkit-border-radius: 0px;
+            -moz-border-radius: 0px;
+            border-radius: 0px;
+            color: #484848;
+            margin: 0;
+            font-size: 12px;
+        }
+
+        .tab-panel-custom ul.steps li a .badge {
+            background-color: #d4d4d4;
+            color: #484848;
+            margin-right: 5px;
+        }
+
+        .tab-panel-custom ul.steps li.active a {
+            background: transparent;
+            color: #333;
+        }
+
+        .tab-panel-custom ul.steps li.active a .badge {
+            background-color: #20a8d8;
+            color: white;
+        }
+
+        .tab-panel-custom ul.steps li.complete a {
+            background: transparent;
+        }
+
+        .tab-panel-custom ul.steps li.complete a .badge {
+            background-color: #79c447;
+            color: white;
+        }
+
+        .tab-panel-custom .tab-pane {
+            padding: 15px 0;
+        }
+
+        .tab-panel-custom .actions {
+            border: none;
+            background: #ffffff;
+            margin: 0 -9px -9px -9px;
+            padding: 15px;
+        }
+
+        .phoneCheckSmsCode, .phoneNumInput, .priceMonitorInput {
+            width: 20%;
+            height: 34px;
+            padding: 6px 12px;
+            font-size: 13px;
+            line-height: 1.42857143;
+            color: #555;
+            background-color: #fff;
+            background-image: none;
+            border: 1px solid #e3e6f3;
+            border-radius: 0;
+            -webkit-box-shadow: none;
+            box-shadow: none;
+            -webkit-transition: border .25s linear, color .25s linear, background-color .25s linear;
+            transition: border .25s linear, color .25s linear, background-color .25s linear;
+            -webkit-appearance: none;
+            font-weight: 400;
+            font-size: 13px;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .checkbox-custom.checkbox-inline {
+            width: 20px;
+            height: 20px;
+            position: relative;
+        }
+
+        .checkbox-custom.checkbox-inline label {
+            cursor: pointer;
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            top: 0;
+            left: 0;
+            background: #eee;
+            border: 1px solid #ddd;
+        }
+
+        .checkbox-custom.checkbox-inline label:after {
+            opacity: 0.2;
+            content: '';
+            position: absolute;
+            width: 9px;
+            height: 5px;
+            background: transparent;
+            top: 5px;
+            left: 5px;
+            border: 3px solid #333;
+            border-top: none;
+            border-right: none;
+
+            -webkit-transform: rotate(-45deg);
+            -moz-transform: rotate(-45deg);
+            -o-transform: rotate(-45deg);
+            -ms-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+        }
+
+
+        .checkbox-custom.checkbox-inline label:hover::after {
+            opacity: 0.5;
+        }
+
+        .checkbox-custom.checkbox-inline input[type=checkbox]:checked + label:after {
+            opacity: 1;
+        }
