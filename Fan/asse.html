@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+	<!--<![endif]-->
+	<html class=" js flexbox canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths">
+	<!--<![endif]-->
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>資産彙報| 互聯現金 - 專業,透明, 高回報</title>
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width">
+		<meta name="theme-color" content="#ffffff">
+		<link rel="icon" href="img/icc.ico">
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/icomoon-social.css">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,600,800" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" href="css/leaflet.css">
+		<link rel="stylesheet" type="text/css" href="css/other.css">
+		<link rel="stylesheet" href="css/main.css">
+		<link rel="apple-touch-icon" sizes="180x180" href="/meta/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="/meta/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/meta/favicon-16x16.png">
+		<link rel="manifest" href="/meta/manifest.json">
+		<link rel="mask-icon" href="/meta/safari-pinned-tab.svg" color="#5bbad5">
+
+		<meta name="msapplication-config" content="/ietemplates/ieconfig.xml">
+		<script src="js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+		<style type="text/css">
+			h2 {
+				border-bottom: 0;
+			}
+			
+			.blog-post a {
+				margin-top: 20px;
+				font-family: 'Open Sans', sans-serif;
+				color: #53555c;
+			}
+			
+			.blog-post a:hover {
+				color: #4f8db3;
+				text-decoration: none;
+			}
+			
+			.blog-post a:visited {
+				text-decoration: none;
+			}
+			
+			.blog-post p {
+				display: -webkit-box;
+				-webkit-box-orient: vertical;
+				-webkit-line-clamp: 4;
+				overflow: hidden;
+				text-indent: 2em;
+				padding-top: 2px;
+				font-size: 15px;
+				letter-spacing: 1px;
+			}
+			
+			h4 {
+				padding-top: 0;
+				margin-right: 10px;
+			}
+			
+			.author {
+				text-align: center;
+			}
+			
+			.site-wrap span {
+				cursor: pointer;
+			}
+			
+			
+			.page_style {
+				position: fixed;
+				width: 100%;
+				bottom: 0;
+			}
+			</style>
+	</head>
+
+	<body>
+
+		<!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+
+		<!-- Navigation & Logo-->
+		<div class="mainmenu-wrapper">
+			<div class="container">
+				<div class="menuextras">
+					<div class="extras">
+						<ul>
+							<li role="menuitem">
+								<a href="../index.html"><img src="img/flags/gb.png" alt="English"> EN</a>
+							</li>
+							<li role="menuitem">
+								<a href="../ES/index.html"><img src="img/flags/es.png"> ES</a>
+							</li>
+							<li role="menuitem">
+								<a href="../AE/index.html"><img src="img/flags/ae.png" alt="Arab"> AE</a>
+							</li>
+							<li role="menuitem">
+								<a href="index.html"><img src="img/flags/ws.png"> 繁體</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<nav id="mainmenu" class="mainmenu">
+					<ul>
+						<li class="logo-wrapper">
+							<a href="index.html"><img src="img/mPurpose-logo.png" alt="Multipurpose Twitter Bootstrap Template"></a>
+						</li>
+						<li>
+							<a href="index.html">首頁</a>
+						</li>
+						<li>
+							<a href="features.html">介紹</a>
+						</li>
+						<li>
+							<a href="line.html">發展</a>
+						</li>
+						<li>
+							<a href="obtain.html">獲取</a>
+						</li>
+						<li class="has-submenu active" id="use_title">
+							<a href="#" onclick="set_use()">公告</a>
+							<div class="mainmenu-submenu" id="use_main">
+								<div class="mainmenu-submenu-inner">
+									<div>
+										<ul>
+											<li>
+												<a href="announcement.html">ICC公告</a>
+											</li>
+											<li>
+												<a href="trade.html">交易報告</a>
+											</li>
+											<li>
+												<a href="asse.html">資産報告</a>
+											</li>
+											<li>
+												<a href="news.html">新聞資訊</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<!-- /mainmenu-submenu-inner -->
+							</div>
+							<!-- /mainmenu-submenu -->
+						</li>
+						<li>
+							<a href="" onclick="set_f()">論壇</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+
+		<!-- Page Title -->
+		<div class="section section-breadcrumbs">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<h1>資産報告</h1>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="site-wrap">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-2"></div>
+					<div class="col-md-8 " id="main">
+						<p class="warn" style="text-align: center; color: rgb(118, 119, 124); font-size: 20px; font-weight: bold; margin-top: 100px;">暫未發布消息</p>
+						<br>
+						<!--<nav style="float: left;">
+							<ul class="pagination">
+								<li id="spanFirst">
+									<span aria-hidden="true">«</span>
+								</li>
+								<li id="spanPre">
+									<span>上一頁</span>
+								</li>
+								<li id="spanNext">
+									<a href="javascript:next();">下一頁</a>
+								</li>
+								<li id="spanLast">
+									<a href="javascript:last();" aria-label="Next"><span aria-hidden="true">»</span></a>
+								</li>
+							</ul>
+						</nav>
+						<div style="float: left; margin-top: 28px;margin-left: 10px;">
+							第<span id="spanPageNum"></span>頁/共<span id="spanTotalPage"></span>頁
+						</div>-->
+					</div>
+					<div class="col-md-2"></div>
+				</div>
+
+			</div>
+
+		</div>
+
+		<!-- Footer -->
+		<div class="footer" style="position: fixed;bottom: 0; width: 100%;">
+			<div class="container">
+				<div class="row text-center">
+					<div class="col-footer col-md-4 col-xs-4">
+						<h3>資源</h3>
+						<ul class="no-list-style footer-navigate-section">
+							<li>
+								<a href="obtain.html">獲取</a>
+							</li>
+							<li>
+								<a href="line.html">發展</a>
+							</li>
+
+							<li>
+								<a href="https://etherscan.io/token/0x027b6094ac3da754fccc7c088be04ca155782a66" target="_blank">區塊</a>
+							</li>
+						</ul>
+					</div>
+
+					<div class="col-footer col-md-4 col-xs-4">
+						<h3>交流</h3>
+						<ul class="no-list-style footer-navigate-section line-height">
+							<li>
+								<a href="https://twitter.com/icc_cash" target="_blank" tppabs="https://twitter.com/icc_cash" class="white">推特</a>
+							</li>
+							<li>
+								<a href="https://t.me/IC_Cash" target="_blank" tppabs="https://t.me/IC_Cash" class="white">電報群</a>
+							</li>
+							<li>
+								<a href="https://bitcointalk.org/index.php?topic=2699240.msg27587074" tppabs="https://bitcointalk.org/index.php?topic=2699240.msg27587074"  target="_blank" class="white">Bitcointalk 論壇</a>
+							</li>
+							<li>
+								<a href="http://weibo.com/u/6285330264" tppabs="http://weibo.com/u/6285330264" target="_blank" class="white">微博</a>
+							</li>
+						</ul>
+					</div>
+
+					<div class="col-footer col-md-4 col-xs-4 footer-second">
+						<h3>其他</h3>
+						<ul class="no-list-style footer-navigate-section line-height">
+							<li>
+								<a href="legal.html" class="white footer-link">法律相關</a>
+							</li>
+							<li>
+								admin@ic.cash
+							</li>
+							<li>
+								an@ic.cash
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Javascripts -->
+		<script src="js/jquery-1.9.1.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/leaflet.js"></script>
+		<script src="js/jquery.fitvids.js"></script>
+		<script src="js/jquery.sequence-min.js"></script>
+		<script src="js/jquery.bxslider.js"></script>
+		<script src="js/main-menu.js"></script>
+		<script src="js/template.js"></script>
+		<script src="" type="text/javascript" charset="utf-8"></script>
+		<script src="../../../static.getmonero.org/scripts.js" tppabs="https://static.getmonero.org/scripts.js"></script>
+		<script src="" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			function set_use() {
+				var use_title = $('#use_title').width();
+				var use_left = $('#use_title').offset().left;
+				$("#use_main").css("width", use_title + 100);
+				$("#use_main").css("left", use_left - 50);
+			}
+				function set_f() {
+				window.open("http://forum.ic.cash");
+			}
+			function set_resource() {
+				var resource_title = $('#resource_title').width();
+				var resource_left = $('#resource_title').offset().left;
+				$("#resource_main").css("width", resource_title + 100);
+				$("#resource_main").css("left", resource_left - 50);
+			}
+
+			//翻頁
+			var theTable = document.getElementById("main");
+			var totalPage = document.getElementById("spanTotalPage");
+			var pageNum = document.getElementById("spanPageNum");
+
+			var spanPre = document.getElementById("spanPre");
+			var spanNext = document.getElementById("spanNext");
+			var spanFirst = document.getElementById("spanFirst");
+			var spanLast = document.getElementById("spanLast");
+
+			var numberRows = $('.blog-post').length;
+			var pageSize = 3;
+			var page = 1;
+			console.log(numberRows);
+
+			function hideTable() {
+				for(var i = 0; i < numberRows; i++) {
+					blog[i].style.display = 'none';
+				}
+			}
+			var blog = document.getElementsByClassName("blog-post");
+			//下一頁
+			function next() {
+
+				hideTable();
+
+				var currentRow = pageSize * page;
+				var maxRow = currentRow + pageSize;
+				if(maxRow > numberRows) {
+					maxRow = numberRows;
+				}
+				for(var i = currentRow; i < maxRow; i++) {
+					blog[i].style.display = '';
+				}
+				page++;
+
+				if(maxRow == numberRows) {
+					nextText();
+					lastText();
+				}
+				showPage();
+				preLink();
+				firstLink();
+			}
+
+			//上一頁
+			function pre() {
+
+				hideTable();
+
+				page--;
+
+				var currentRow = pageSize * page;
+				var maxRow = currentRow - pageSize;
+				if(currentRow > numberRows) {
+					currentRow = numberRows;
+				}
+				for(var i = maxRow; i < currentRow; i++) {
+					blog[i].style.display = '';
+				}
+
+				if(maxRow == 0) {
+					preText();
+					firstText();
+				}
+				showPage();
+				nextLink();
+				lastLink();
+			}
+
+			//第一頁
+			function first() {
+				hideTable();
+				page = 1;
+				for(var i = 0; i < pageSize; i++) {
+					blog[i].style.display = '';
+				}
+				showPage();
+
+				preText();
+				nextLink();
+				lastLink();
+			}
+
+			//最后一頁
+			function last() {
+				hideTable();
+				page = pageCount();
+				console.log("page=" + page);
+				currentRow = pageSize * (page - 1);
+				for(var i = currentRow; i < numberRows; i++) {
+					blog[i].style.display = '';
+				}
+				showPage();
+
+				preLink();
+				nextText();
+				firstLink();
+			}
+
+			function showPage() {
+				pageNum.innerHTML = page;
+			}
+
+			//总共頁数
+			function pageCount() {
+				var count = 0;
+				if(numberRows % pageSize != 0) count = 1;
+				return parseInt(numberRows / pageSize) + count;
+			}
+
+			//显示链接
+			function preLink() {
+				spanPre.innerHTML = "<a href='javascript:pre();'>上一頁</a>";
+			}
+
+			function preText() {
+				spanPre.innerHTML = "<span>上一頁</span>";
+			}
+
+			function nextLink() {
+				spanNext.innerHTML = "<a href='javascript:next();'>下一頁</a>";
+			}
+
+			function nextText() {
+				spanNext.innerHTML = "<span>下一頁</span>";
+			}
+
+			function firstLink() {
+				//				spanFirst.innerHTML = "<a href='javascript:first();'>«</a>";
+				spanFirst.innerHTML = '<a href="javascript:first();" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a>';
+			}
+
+			function firstText() {
+				//				spanFirst.innerHTML = "«";
+				spanFirst.innerHTML = '<span aria-hidden="true">&laquo;</span>';
+			}
+
+			function lastLink() {
+				//				spanLast.innerHTML = "<a href='javascript:last();'>»</a>";
+				spanLast.innerHTML = '<a href="javascript:last();" aria-label="Next"><span aria-hidden="true">&raquo;</span></a>';
+			}
+
+			function lastText() {
+				spanLast.innerHTML = '<span aria-hidden="true">&raquo;</span>';
+			}
+
+			//隐藏表格
+			function hide() {
+				for(var i = pageSize; i < numberRows; i++) {
+					blog[i].style.display = 'none';
+				}
+
+				totalPage.innerHTML = pageCount();
+				pageNum.innerHTML = '1';
+
+				if(pageCount() == 1) {
+					nextText();
+					lastText();
+				} else {
+					nextLink();
+					lastLink();
+				}
+			}
+			hide();
+		</script>
+
+	</body>
+
+	</html>

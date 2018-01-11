@@ -1,0 +1,1 @@
+"D:\soft\wamp\bin\php\php5.3.3\php.exe" -f "D:\soft\wamp\www\ICC\dom\test.php"
