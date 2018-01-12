@@ -39,13 +39,14 @@ var method={
             //按钮
             if(obj.btn[0] != 0){
                 _cansel.css("display","inline-block");
+                _cansel.css("background","#50bce0");
                 _cansel.html(obj.btn[0]);
                 _cansel.on("click",function(){
                     method.msg_close();
                 })
             }
             if(obj.btn[1] != 0){
-                _commit.css("display","inline-block");
+                _commit.css("display","inline-block");     
                 _commit.html(obj.btn[1]);
             }
         }
